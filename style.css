@@ -1,0 +1,21 @@
+h1 {
+  font-family: "Rochester", cursive;
+}
+
+#shoppingCart {
+  max-width: 50%;
+}
+
+.navBar {
+  font-family: "Roboto", sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.titCateg {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700, bolder;
+  text-align: center;
+  padding-top: 10px;
+}
