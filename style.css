@@ -1,21 +1,49 @@
 h1 {
+  padding-left: 5px;
   font-family: "Rochester", cursive;
 }
 
-#shoppingCart {
-  max-width: 50%;
+a {
+  text-decoration: none;
+}
+
+.shoppingCart {
+  width: 50px;
+  height: auto;
+}
+
+.shoppingCartDesktop {
+  width: 50px;
+  height: auto;
 }
 
 .navBar {
   font-family: "Roboto", sans-serif;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
 }
 
-.titCateg {
+h3 {
   font-family: "Roboto", sans-serif;
-  font-weight: 700, bolder;
+  font-weight: bolder;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#numArticulos {
+  padding-top: 15px;
+}
+
+#numArticulos2 {
+  padding-top: 15px;
+}
+
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.derecha {
+  text-align: right;
 }

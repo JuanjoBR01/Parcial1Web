@@ -13,30 +13,147 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Rochester&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rochester&display=swap"
       rel="stylesheet"
     />
 
     <title>Restaurant & Lounge</title>
   </head>
   <body id="body">
-    <div>
-      <div class="row">
-        <div class="col-11">
-          <h1>Restaurant & Lounge</h1>
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cancel the Order</h5>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure about cancelling the order?</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-dismiss="modal"
+              id="btnCancelarOrden"
+            >
+              Yes, I want to cancel the order
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="btnSeguirComprando"
+            >
+              No, I want to continue adding products
+            </button>
+          </div>
         </div>
-        <div class="col-1">
-          <img src="Cart.png" alt="Shopping Cart" id="shoppingCart" />
-        </div>
-        <hr />
       </div>
-      <div class="row">
+    </div>
+    <div>
+      <div>
+        <div class="row d-sm-none">
+          <div class="row">
+            <div class="col-8"></div>
+            <div class="col-2">
+              <img
+                src="Cart.png"
+                alt="Shopping Cart"
+                class="shoppingCart"
+                id="shoppingCart2"
+              />
+            </div>
+            <div class="col-2">
+              <h6 id="numArticulos2">0 items</h6>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-sm-10 d-sm-block">
+              <h1>Restaurant & Lounge</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-sm-block">
+        <div class="row">
+          <div class="col-sm-10 d-sm-block">
+            <h1>Restaurant & Lounge</h1>
+          </div>
+          <div class="col-sm-1 d-sm-block">
+            <img
+              src="Cart.png"
+              alt="Shopping Cart"
+              class="shoppingCartDesktop"
+              id="shoppingCart"
+            />
+          </div>
+          <div class="col-sm-1 d-sm-block">
+            <h6 id="numArticulos">0 items</h6>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row d-sm-none">
+        <nav class="nnvar navbar navbar-expand-lg bg-warning" id="nnvar">
+          <div class="container-fluid">
+            <h6 id="cargado">Burguers</h6>
+            <button
+              class="navbar-toggler conta"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                />
+              </svg>
+              <i class="bi bi-arrow-down"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link">Burguers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Tacos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Salads</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Desserts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Drinks and Sides</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="row d-none d-sm-block">
         <img src="Banner.png" alt="banner" />
       </div>
       <hr />
       <div id="main-div"></div>
     </div>
 
+    <div class="row text-center py-5">
+      <h6>Contact us: +573102171020 - info@restaurant.com - @restaurant</h6>
+    </div>
     <!--<script src="Ejercicio.js"></script>-->
     <script src="main.js"></script>
 
